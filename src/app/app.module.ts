@@ -7,7 +7,19 @@ import { AdddonerComponent } from './adddoner/adddoner.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchdonerComponent } from './searchdoner/searchdoner.component';
 import { DeletedonerComponent } from './deletedoner/deletedoner.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes:Routes=[
+  {
+    path:"",component:AdddonerComponent
+  },
+  {
+    path:"search",component:SearchdonerComponent
+  },
+  {
+    path:"delete",component:DeletedonerComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +30,8 @@ import { DeletedonerComponent } from './deletedoner/deletedoner.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
