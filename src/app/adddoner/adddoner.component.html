@@ -5,11 +5,11 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Doner Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="donerName" [(ngModel)]="donerName">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Blood Group</label>
-                    <select name="" id="" class="form-control">
+                    <select name="" id="" class="form-control" name="bloodGroup" [(ngModel)]="bloodGroup">
                         <option value="A+">A+</option>
                         <option value="A-">A-</option>
                         <option value="B+">B+</option>
@@ -22,38 +22,38 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Date Of Birth</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="" id="" class="form-control" name="dateOfBirth" [(ngModel)]="dateOfBirth">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Last donation date</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="" id="" class="form-control" name="lastDonationDate" [(ngModel)]="lastDonationDate">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Any previous diseases</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="anyPreviousDiseases" [(ngModel)]="anyPreviousDiseases">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Last Vaccination Date</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="" id="" class="form-control" name="LastVaccinationDate" [(ngModel)]="LastVaccinationDate">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" name="address" [(ngModel)]="address"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Pincode</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="pincode" [(ngModel)]="pincode">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Mobile Number</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="mobile" [(ngModel)]="mobile">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">Email id</label>
-                    <input type="email" name="" id="" class="form-control">
+                    <input type="email" name="" id="" class="form-control" name="email" [(ngModel)]="email">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-success" (click)="readValues()">Submit</button>
                 </div>
             </div>
         </div>
