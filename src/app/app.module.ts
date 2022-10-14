@@ -10,6 +10,7 @@ import { DeletedonerComponent } from './deletedoner/deletedoner.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewAllDonerComponent } from './view-all-doner/view-all-doner.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes:Routes=[
   {
@@ -38,7 +39,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
